@@ -11,6 +11,11 @@ gem 'sqlite3'
 gem 'puma', '~> 3.11'
 
 gem 'rack-cors', require: 'rack/cors'
+
+gem 'devise'
+gem 'simple_token_authentication','~> 1.0'
+
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
