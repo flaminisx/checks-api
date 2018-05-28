@@ -17,7 +17,9 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     @product.user = current_user
-    @product.purchased_at = DateTime.strptime product_params[:purchased_at].to_s, '%s'
+    if product_params[:purchased_at].is_a? Integer then
+      @product.purchased_at = DateTime.strptime product_params[:purchased_at].to_s, '%s'
+    end
     if @product.save
       render json: @product, status: :created, location: @product
     else
