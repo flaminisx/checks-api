@@ -1,24 +1,15 @@
-# README
+# CHECKS APP API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Simple api for product checks on rails
 
-Things you may want to cover:
+In order to run this app you need to
+1. clone this repo
+2. get ruby v2.4.0 `rvm install 2.4.0`
+3. create __.env__ file like __.env.example__ `cp .env.example .env`
+4. run `bundle`
+5. run `rails db:migrate`
+6. run `rails s`
 
-* Ruby version
+To get all api endpoints, execute `rails routes`
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
